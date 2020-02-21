@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="solrTest" time="1.624" errors="1" skipped="0">
+  <properties>
+    <property name="idea.version" value="2018.1.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\bin"/>
+    <property name="java.vm.version" value="25.172-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Workspace\IDEA\hautBBS"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Workspace\IDEA\hautBBS"/>
+    <property name="java.runtime.version" value="1.8.0_172-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\DX\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\Application\XShell\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\Java\jdk1.8.0_172\jre\bin;C:\WINDOWS\System32\OpenSSH\;D:\Application\mysql-5.7.22-winx64\bin;D:\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin\;D:\Application\Git\cmd;C:\Users\DX\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\DX\AppData\Local\Programs\Python\Python37\;C:\Users\DX\AppData\Local\Microsoft\WindowsApps;D:\Application\Microsoft VS Code\bin;C:\Users\DX\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="D:\apache-maven-3.5.4-bin\apache-maven-3.5.4/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\DX"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="DX"/>
+    <property name="java.class.path" value="D:\apache-maven-3.5.4-bin\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\Application\idea\IntelliJ IDEA 2018.1.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_172\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2018.1.2 package -f pom.xml"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_172"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_172\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_172\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_172\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\apache-maven-3.5.4-bin\apache-maven-3.5.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="solrTest" name="addToSolr" time="1.624">
+    <error message="Server at https://www.coldcoder.cn/solr/topic_core sent back a redirect (302)." type="org.apache.solr.client.solrj.SolrServerException">org.apache.solr.client.solrj.SolrServerException: Server at https://www.coldcoder.cn/solr/topic_core sent back a redirect (302).
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.executeMethod(HttpSolrClient.java:566)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:255)
+	at org.apache.solr.client.solrj.impl.HttpSolrClient.request(HttpSolrClient.java:244)
+	at org.apache.solr.client.solrj.SolrRequest.process(SolrRequest.java:194)
+	at org.apache.solr.client.solrj.SolrClient.add(SolrClient.java:173)
+	at org.apache.solr.client.solrj.SolrClient.addBean(SolrClient.java:277)
+	at org.apache.solr.client.solrj.SolrClient.addBean(SolrClient.java:259)
+	at solrTest.addToSolr(solrTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-out>22:42:56,199 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+22:42:56,199 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+22:42:56,199 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/D:/Workspace/IDEA/hautBBS/target/classes/logback.xml]
+22:42:56,324 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+22:42:56,324 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Setting ReconfigureOnChangeFilter scanning period to 1 minutes
+22:42:56,324 |-INFO in ReconfigureOnChangeFilter{invocationCounter=0} - Will scan for changes in [[D:\Workspace\IDEA\hautBBS\target\classes\logback.xml]] every 60 seconds. 
+22:42:56,324 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - Adding ReconfigureOnChangeFilter as a turbo filter
+22:42:56,339 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+22:42:56,339 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+22:42:56,370 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:19 - no applicable action for [encoding], current ElementPath  is [[configuration][appender][encoding]]
+22:42:56,370 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:42:56,433 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+22:42:56,433 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [mmall]
+22:42:56,448 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@18:21 - no applicable action for [append], current ElementPath  is [[configuration][appender][rollingPolicy][append]]
+22:42:56,448 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use gz compression
+22:42:56,448 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern D:/apache-tomcat-9.0.16/logs/mmall.log.%d{yyyy-MM-dd} for the active file
+22:42:56,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is &apos;yyyy-MM-dd&apos; from file name pattern &apos;D:/apache-tomcat-9.0.16/logs/mmall.log.%d{yyyy-MM-dd}.gz&apos;.
+22:42:56,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+22:42:56,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Wed Apr 10 23:51:08 CST 2019
+22:42:56,464 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:42:56,464 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[mmall] - Active log file name: D:/apache-tomcat-9.0.16/logs/mmall.log
+22:42:56,464 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[mmall] - File property is set to [D:/apache-tomcat-9.0.16/logs/mmall.log]
+22:42:56,464 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.rolling.RollingFileAppender]
+22:42:56,464 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [error]
+22:42:56,464 |-ERROR in ch.qos.logback.core.joran.spi.Interpreter@33:21 - no applicable action for [append], current ElementPath  is [[configuration][appender][rollingPolicy][append]]
+22:42:56,464 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use gz compression
+22:42:56,464 |-INFO in c.q.l.core.rolling.TimeBasedRollingPolicy - Will use the pattern D:/apache-tomcat-9.0.16/logs/error.log.%d{yyyy-MM-dd} for the active file
+22:42:56,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - The date pattern is &apos;yyyy-MM-dd&apos; from file name pattern &apos;D:/apache-tomcat-9.0.16/logs/error.log.%d{yyyy-MM-dd}.gz&apos;.
+22:42:56,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Roll-over at midnight.
+22:42:56,464 |-INFO in c.q.l.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy - Setting initial period to Wed Mar 27 15:44:36 CST 2019
+22:42:56,464 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:42:56,480 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[error] - Active log file name: D:/apache-tomcat-9.0.16/logs/error.log
+22:42:56,480 |-INFO in ch.qos.logback.core.rolling.RollingFileAppender[error] - File property is set to [D:/apache-tomcat-9.0.16/logs/error.log]
+22:42:56,480 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.mmall] to INFO
+22:42:56,480 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting additivity of logger [com.mmall] to false
+22:42:56,480 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [mmall] to Logger[com.mmall]
+22:42:56,480 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[com.mmall]
+22:42:56,480 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.mmall.dao] to DEBUG
+22:42:56,480 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+22:42:56,480 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+22:42:56,480 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [error] to Logger[ROOT]
+22:42:56,480 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+22:42:56,480 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@4e7dc304 - Registering current configuration as safe fallback point
+
+[22:42:57.214][DEBUG][o.a.s.client.solrj.impl.HttpClientUtil][main] Creating new http client, config:followRedirects=false&amp;allowCompression=false
+[22:42:57.292][DEBUG][o.a.h.client.protocol.RequestAddCookies][main] CookieSpec selected: default
+[22:42:57.308][DEBUG][o.a.h.client.protocol.RequestAuthCache][main] Auth cache not set in the context
+[22:42:57.308][DEBUG][o.a.h.i.c.PoolingHttpClientConnectionManager][main] Connection request: [route: {s}-&gt;https://www.coldcoder.cn:443][state: class org.apache.solr.client.solrj.impl.HttpSolrClient][total kept alive: 0; route allocated: 0 of 10000; total allocated: 0 of 10000]
+[22:42:57.339][DEBUG][o.a.h.i.c.PoolingHttpClientConnectionManager][main] Connection leased: [id: 0][route: {s}-&gt;https://www.coldcoder.cn:443][total kept alive: 0; route allocated: 1 of 10000; total allocated: 1 of 10000]
+[22:42:57.339][DEBUG][o.a.http.impl.execchain.MainClientExec][main] Opening connection {s}-&gt;https://www.coldcoder.cn:443
+[22:42:57.401][DEBUG][o.a.h.i.c.DefaultHttpClientConnectionOperator][main] Connecting to www.coldcoder.cn/60.205.226.54:443
+[22:42:57.401][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main] Connecting socket to www.coldcoder.cn/60.205.226.54:443 with timeout 60000
+[22:42:57.526][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main] Enabled protocols: [TLSv1, TLSv1.1, TLSv1.2]
+[22:42:57.526][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main] Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[22:42:57.526][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main] Starting handshake
+[22:42:57.636][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main] Secure session established
+[22:42:57.636][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main]  negotiated protocol: TLSv1.2
+[22:42:57.636][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main]  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+[22:42:57.636][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main]  peer principal: CN=www.coldcoder.cn
+[22:42:57.636][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main]  peer alternative names: [www.coldcoder.cn, coldcoder.cn]
+[22:42:57.636][DEBUG][o.a.h.c.ssl.SSLConnectionSocketFactory][main]  issuer principal: CN=Encryption Everywhere DV TLS CA - G1, OU=www.digicert.com, O=DigiCert Inc, C=US
+[22:42:57.636][DEBUG][o.a.h.i.c.DefaultHttpClientConnectionOperator][main] Connection established 192.168.1.4:53538&lt;-&gt;60.205.226.54:443
+[22:42:57.636][DEBUG][o.a.h.i.c.DefaultManagedHttpClientConnection][main] http-outgoing-0: set socket timeout to 600000
+[22:42:57.636][DEBUG][o.a.http.impl.execchain.MainClientExec][main] Executing request POST /solr/topic_core/update?wt=javabin&amp;version=2 HTTP/1.1
+[22:42:57.636][DEBUG][o.a.http.impl.execchain.MainClientExec][main] Target auth state: UNCHALLENGED
+[22:42:57.636][DEBUG][o.a.http.impl.execchain.MainClientExec][main] Proxy auth state: UNCHALLENGED
+[22:42:57.651][DEBUG][org.apache.http.headers][main] http-outgoing-0 &gt;&gt; POST /solr/topic_core/update?wt=javabin&amp;version=2 HTTP/1.1
+[22:42:57.651][DEBUG][org.apache.http.headers][main] http-outgoing-0 &gt;&gt; Content-Type: application/javabin
+[22:42:57.651][DEBUG][org.apache.http.headers][main] http-outgoing-0 &gt;&gt; User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0
+[22:42:57.651][DEBUG][org.apache.http.headers][main] http-outgoing-0 &gt;&gt; Transfer-Encoding: chunked
+[22:42:57.651][DEBUG][org.apache.http.headers][main] http-outgoing-0 &gt;&gt; Host: www.coldcoder.cn
+[22:42:57.651][DEBUG][org.apache.http.headers][main] http-outgoing-0 &gt;&gt; Connection: Keep-Alive
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;POST /solr/topic_core/update?wt=javabin&amp;version=2 HTTP/1.1[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;Content-Type: application/javabin[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;User-Agent: Solr[org.apache.solr.client.solrj.impl.HttpSolrClient] 1.0[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;Host: www.coldcoder.cn[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;89[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;[0x2][0xc3][0xe0]&amp;params[0xc0][0xe0]&amp;delByQ[0x0][0xe0]&apos;docsMap[0xe][0x13][0x10][0x5][0x8]?[0x80][0x0][0x0][0xe0]&quot;id[[0xf4][0x4][0xe0]%title?[0x3][0xe5][0x8f][0x91][0xe7][0xbb][0x99]solr[0xef][0xbc][0x8c][0xe6][0x9d][0xa5][0xe8][0x87][0xaa][0xe7][0x94][0xb5][0xe8][0x84][0x91][0xe5][0xae][0xa2][0xe6][0x88][0xb7][0xe7][0xab][0xaf][0xe0]&apos;content,[0xe5][0x93][0x88][0xe5][0x93][0x88][0xe5][0x93][0x88][0xe5][0x93][0x88][0xe0])topicType[0x0][0xe0]*createTime[0x0][0x0][0xf][\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;0[\r][\n]&quot;
+[22:42:57.667][DEBUG][org.apache.http.wire][main] http-outgoing-0 &gt;&gt; &quot;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;HTTP/1.1 302 Moved Temporarily[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;Server: nginx/1.10.2[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;Date: Mon, 19 Aug 2019 14:42:56 GMT[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;Content-Type: text/html[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;Content-Length: 161[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;Connection: keep-alive[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;Location: https://www.coldcoder.cn?wt=javabin&amp;version=2[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;&lt;html&gt;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;&lt;head&gt;&lt;title&gt;302 Found&lt;/title&gt;&lt;/head&gt;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;&lt;body bgcolor=&quot;white&quot;&gt;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;&lt;center&gt;&lt;h1&gt;302 Found&lt;/h1&gt;&lt;/center&gt;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;&lt;hr&gt;&lt;center&gt;nginx/1.10.2&lt;/center&gt;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;&lt;/body&gt;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.wire][main] http-outgoing-0 &lt;&lt; &quot;&lt;/html&gt;[\r][\n]&quot;
+[22:42:57.698][DEBUG][org.apache.http.headers][main] http-outgoing-0 &lt;&lt; HTTP/1.1 302 Moved Temporarily
+[22:42:57.698][DEBUG][org.apache.http.headers][main] http-outgoing-0 &lt;&lt; Server: nginx/1.10.2
+[22:42:57.698][DEBUG][org.apache.http.headers][main] http-outgoing-0 &lt;&lt; Date: Mon, 19 Aug 2019 14:42:56 GMT
+[22:42:57.698][DEBUG][org.apache.http.headers][main] http-outgoing-0 &lt;&lt; Content-Type: text/html
+[22:42:57.698][DEBUG][org.apache.http.headers][main] http-outgoing-0 &lt;&lt; Content-Length: 161
+[22:42:57.698][DEBUG][org.apache.http.headers][main] http-outgoing-0 &lt;&lt; Connection: keep-alive
+[22:42:57.698][DEBUG][org.apache.http.headers][main] http-outgoing-0 &lt;&lt; Location: https://www.coldcoder.cn?wt=javabin&amp;version=2
+[22:42:57.714][DEBUG][o.a.http.impl.execchain.MainClientExec][main] Connection can be kept alive indefinitely
+[22:42:57.714][DEBUG][o.a.h.i.c.PoolingHttpClientConnectionManager][main] Connection [id: 0][route: {s}-&gt;https://www.coldcoder.cn:443][state: class org.apache.solr.client.solrj.impl.HttpSolrClient] can be kept alive indefinitely
+[22:42:57.714][DEBUG][o.a.h.i.c.DefaultManagedHttpClientConnection][main] http-outgoing-0: set socket timeout to 0
+[22:42:57.714][DEBUG][o.a.h.i.c.PoolingHttpClientConnectionManager][main] Connection released: [id: 0][route: {s}-&gt;https://www.coldcoder.cn:443][state: class org.apache.solr.client.solrj.impl.HttpSolrClient][total kept alive: 1; route allocated: 1 of 10000; total allocated: 1 of 10000]
+</system-out>
+  </testcase>
+</testsuite>

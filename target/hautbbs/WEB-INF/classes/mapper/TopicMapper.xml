@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.coldcoder.dao.TopicMapper" >
+  <resultMap id="BaseResultMap" type="cn.coldcoder.pojo.Topic" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="uid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="content" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="images" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="comment_num" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="report_num" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="topic_type" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="status" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="is_anon" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="is_commentable" jdbcType="BIT" javaType="java.lang.Boolean" />
+      <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+  <resultMap id="TopicListMap" type="cn.coldcoder.vo.TopicListVo">
+    <id column="id" property="id" />
+    <result column="title" property="title" />
+    <result column="content" property="content" />
+    <result column="images" property="images" />
+    <result column="is_anon" property="isAnon"/>
+    <result column="is_commentable" property="isCommentable" />
+    <result column="comment_num" property="commentNum" />
+    <result column="create_time" property="createTime" />
+    <result column="update_time" property="updateTime" />
+    <association property="basicUser" javaType="cn.coldcoder.vo.BasicUserInfoVo">
+      <id column="uid" property="uid"/>
+      <result column="nick_name" property="nickName"/>
+      <result column="authen_name" property="authenName" />
+      <result column="avatar_url" property="avatarUrl"/>
+    </association>
+  </resultMap>
+  <resultMap id="BaseTopic" type="cn.coldcoder.vo.BasicTopicVo">
+    <id column="id" property="id"/>
+    <result column="title" property="title"/>
+    <result column="content" property="content"/>
+    <result column="topic_type" property="topicType" />
+    <result column="images" property="images" />
+    <result column="create_time" property="createTime"/>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, uid, title, content, images, comment_num, report_num, topic_type, status, is_anon, 
+    is_commentable, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from topic
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from topic
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.coldcoder.pojo.Topic" >
+    insert into topic (id, uid, title, 
+      content, images, comment_num, 
+      report_num, topic_type, status, 
+      is_anon, is_commentable, create_time, 
+      update_time)
+    values (#{id,jdbcType=INTEGER}, #{uid,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, 
+      #{content,jdbcType=VARCHAR}, #{images,jdbcType=VARCHAR}, #{commentNum,jdbcType=INTEGER}, 
+      #{reportNum,jdbcType=INTEGER}, #{topicType,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{isAnon,jdbcType=BIT}, #{isCommentable,jdbcType=BIT}, now(),
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.coldcoder.pojo.Topic" >
+    <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into topic
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="uid != null" >
+        uid,
+      </if>
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+      <if test="images != null" >
+        images,
+      </if>
+      <if test="commentNum != null" >
+        comment_num,
+      </if>
+      <if test="reportNum != null" >
+        report_num,
+      </if>
+      <if test="topicType != null" >
+        topic_type,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="isAnon != null" >
+        is_anon,
+      </if>
+      <if test="isCommentable != null" >
+        is_commentable,
+      </if>
+        create_time,
+        update_time,
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="uid != null" >
+        #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="images != null" >
+        #{images,jdbcType=VARCHAR},
+      </if>
+      <if test="commentNum != null" >
+        #{commentNum,jdbcType=INTEGER},
+      </if>
+      <if test="reportNum != null" >
+        #{reportNum,jdbcType=INTEGER},
+      </if>
+      <if test="topicType != null" >
+        #{topicType,jdbcType=INTEGER},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="isAnon != null" >
+        #{isAnon,jdbcType=BIT},
+      </if>
+      <if test="isCommentable != null" >
+        #{isCommentable,jdbcType=BIT},
+      </if>
+        now(),
+        now()
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.coldcoder.pojo.Topic" >
+    update topic
+    <set >
+      <if test="uid != null" >
+        uid = #{uid,jdbcType=INTEGER},
+      </if>
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="images != null" >
+        images = #{images,jdbcType=VARCHAR},
+      </if>
+      <if test="commentNum != null" >
+        comment_num = #{commentNum,jdbcType=INTEGER},
+      </if>
+      <if test="reportNum != null" >
+        report_num = #{reportNum,jdbcType=INTEGER},
+      </if>
+      <if test="topicType != null" >
+        topic_type = #{topicType,jdbcType=INTEGER},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="isAnon != null" >
+        is_anon = #{isAnon,jdbcType=BIT},
+      </if>
+      <if test="isCommentable != null" >
+        is_commentable = #{isCommentable,jdbcType=BIT},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = now(),
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.coldcoder.pojo.Topic" >
+    update topic
+    set uid = #{uid,jdbcType=INTEGER},
+      title = #{title,jdbcType=VARCHAR},
+      content = #{content,jdbcType=VARCHAR},
+      images = #{images,jdbcType=VARCHAR},
+      comment_num = #{commentNum,jdbcType=INTEGER},
+      report_num = #{reportNum,jdbcType=INTEGER},
+      topic_type = #{topicType,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      is_anon = #{isAnon,jdbcType=BIT},
+      is_commentable = #{isCommentable,jdbcType=BIT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = now()
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <update id="updateStatusByKey" parameterType="map">
+    update topic set status = 1, update_time = now()
+    where id = #{id} and uid = #{uid}
+  </update>
+
+    <select id="selectTopicListByTypeOrderByUpdateTime" parameterType="java.lang.Integer" resultMap="TopicListMap">
+        select topic.id,title,content,images,is_anon,is_commentable,comment_num,topic.update_time,topic.create_time,
+        user.id as uid,user.nick_name,user.authen_name,user.avatar_url
+        from topic,user
+        where topic_type = #{topicType} and topic.uid = user.id and topic.status=0
+        ORDER BY topic.update_time DESC
+    </select>
+
+  <select id="selectTopicListByStatus" parameterType="java.lang.Integer" resultMap="TopicListMap">
+            select topic.id,title,content,images,is_anon,is_commentable,comment_num,topic.update_time,topic.create_time,
+        user.id as uid,user.nick_name,user.authen_name,user.avatar_url
+        from topic,user
+        where topic_type = #{topicType} and topic.uid = user.id and topic.status=#{status}
+        ORDER BY topic.update_time DESC
+  </select>
+
+  <select id="selectTopicVoById" parameterType="java.lang.Integer" resultMap="TopicListMap">
+        select topic.id,title,content,images,is_anon,is_commentable,comment_num,topic.update_time,topic.create_time,
+        user.id as uid,user.nick_name,user.authen_name,user.avatar_url
+        from topic,user
+        where topic.id=#{id} and topic.uid = user.id and topic.status = 0
+  </select>
+
+  <select id="selectBasicTopicByUid" parameterType="java.lang.Integer" resultMap="BaseTopic">
+    select id,title,content,topic_type,images,create_time
+    from topic
+    where uid = #{uid} and status=0
+    order by create_time DESC
+  </select>
+
+  <select id="searchTopicByKey" parameterType="map" resultMap="BaseTopic">
+    select id,title,content,create_time
+    from topic
+    where (title LIKE #{key} OR content LIKE #{key}) and status = 0 and topic_type = #{type}
+    ORDER BY create_time DESC
+  </select>
+
+  <select id="selectAllTopicByuid" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    select id,title,content,status,create_time,update_time
+    from topic
+    where uid = #{uid}
+  </select>
+</mapper>

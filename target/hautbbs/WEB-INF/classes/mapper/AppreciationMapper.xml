@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.coldcoder.dao.AppreciationMapper" >
+  <resultMap id="BaseResultMap" type="cn.coldcoder.pojo.Appreciation" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="tid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="from_uid" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="category" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, tid, from_uid, category, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from appreciation
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from appreciation
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.coldcoder.pojo.Appreciation" >
+    insert into appreciation (id, tid, from_uid, 
+      category, create_time, update_time
+      )
+    values (#{id,jdbcType=INTEGER}, #{tid,jdbcType=INTEGER}, #{fromUid,jdbcType=INTEGER}, 
+      #{category,jdbcType=INTEGER}, now(), #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.coldcoder.pojo.Appreciation" >
+    insert into appreciation
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="tid != null" >
+        tid,
+      </if>
+      <if test="fromUid != null" >
+        from_uid,
+      </if>
+      <if test="category != null" >
+        category,
+      </if>
+        create_time,
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="tid != null" >
+        #{tid,jdbcType=INTEGER},
+      </if>
+      <if test="fromUid != null" >
+        #{fromUid,jdbcType=INTEGER},
+      </if>
+      <if test="category != null" >
+        #{category,jdbcType=INTEGER},
+      </if>
+        now(),
+      <if test="updateTime != null" >
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.coldcoder.pojo.Appreciation" >
+    update appreciation
+    <set >
+      <if test="tid != null" >
+        tid = #{tid,jdbcType=INTEGER},
+      </if>
+      <if test="fromUid != null" >
+        from_uid = #{fromUid,jdbcType=INTEGER},
+      </if>
+      <if test="category != null" >
+        category = #{category,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+        update_time = now(),
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.coldcoder.pojo.Appreciation" >
+    update appreciation
+    set tid = #{tid,jdbcType=INTEGER},
+      from_uid = #{fromUid,jdbcType=INTEGER},
+      category = #{category,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = now()
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectByTIdAndUid" parameterType="map" resultType="int">
+    select count(1) from appreciation
+    where from_uid = #{from_uid} and tid = # {tid} and category = #{category}
+  </select>
+
+  <select id="selectAllTiddByUid" parameterType="map" resultType="int">
+    select tid from appreciation
+    where from_uid = #{from_uid} and category = #{category}
+  </select>
+</mapper>

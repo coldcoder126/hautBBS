@@ -1,5 +1,5 @@
 # hautBBS
-<img src="https://github.com/coldcoder126/git_images/blob/master/hautBBS.JPG" width="200" height="200" alt="微信扫一扫可体验" align=center>
+[小程序端](https://github.com/coldcoder126/wx_hautBBS.git)   
 一款校园论坛小程序的服务端,旨在打造一个轻量级的校园内活动宣传和二手物品发布的平台。  
 服务器为Tomcat,后台使用SSM框架+MySQL，前端使用微信小程序，阿里云oss存储图片，solr作为搜索引擎，Nginx做反向代理服务器  
 功能有： 
